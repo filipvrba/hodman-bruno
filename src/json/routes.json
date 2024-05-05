@@ -9,6 +9,26 @@
         "title": "Home",
         "endpoint": "home",
         "priority": 10
+      },
+      {
+        "title": "O nás",
+        "endpoint": "o_nas",
+        "priority": 1
+      },
+      {
+        "title": "Služby",
+        "endpoint": "sluzby",
+        "priority": 1
+      },
+      {
+        "title": "Ceny",
+        "endpoint": "ceny",
+        "priority": 1
+      },
+      {
+        "title": "Kontakt",
+        "endpoint": "kontakt",
+        "priority": 1
       }
     ]
   }
