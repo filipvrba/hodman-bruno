@@ -6,3 +6,6 @@ window.custom_elements.define('elm-footer', ElmFooter)
 
 import 'ElmHeader', './elements/elm_header'
 window.custom_elements.define('elm-header', ElmHeader)
+
+import 'ElmContacts', './elements/elm_contacts'
+window.custom_elements.define('elm-contacts', ElmContacts)
