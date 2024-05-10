@@ -10,15 +10,16 @@ export default class ElmContacts extends HTMLElement {
     let template = `${`
 <div class='container mt-5'>
   <div class='row'>
-    <div class='col-md-6 mx-auto'>
+    <div class='col-md-6 mx-auto text-center'>
       <h1 class='text-center mb-4'>Kontaktní údaje</h1>
-      <p><strong>Název společnosti:</strong> ${contactsObj.company}</p>
+      <p><strong>Telefon:<br> ${contactsObj.phone}</strong></p>
+      <p><strong>E-mail:<br> ${contactsObj.email}</strong></p>
+      <p><strong>Název společnosti:</strong><br> ${contactsObj.company}</p>
       <p><strong>Adresa:</strong><br> ${contactsObj.address.replaceAll(
       ", ",
       "<br>"
     )}</p>
-      <p><strong>Telefon:</strong><br> ${contactsObj.phone}</p>
-      <p><strong>E-mail:</strong><br> ${contactsObj.email}</p>
+      <p><strong>IČO:</strong><br> ${contactsObj.ico}</p>
     </div>
   </div>
 </div>

@@ -11,12 +11,13 @@ export default class ElmContacts < HTMLElement
     template = """
 <div class='container mt-5'>
   <div class='row'>
-    <div class='col-md-6 mx-auto'>
+    <div class='col-md-6 mx-auto text-center'>
       <h1 class='text-center mb-4'>Kontaktní údaje</h1>
-      <p><strong>Název společnosti:</strong> #{contacts_obj.company}</p>
+      <p><strong>Telefon:<br> #{contacts_obj.phone}</strong></p>
+      <p><strong>E-mail:<br> #{contacts_obj.email}</strong></p>
+      <p><strong>Název společnosti:</strong><br> #{contacts_obj.company}</p>
       <p><strong>Adresa:</strong><br> #{contacts_obj.address.gsub(', ', '<br>')}</p>
-      <p><strong>Telefon:</strong><br> #{contacts_obj.phone}</p>
-      <p><strong>E-mail:</strong><br> #{contacts_obj.email}</p>
+      <p><strong>IČO:</strong><br> #{contacts_obj.ico}</p>
     </div>
   </div>
 </div>
