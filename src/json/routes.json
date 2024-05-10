@@ -29,6 +29,11 @@
         "title": "Kontakt",
         "endpoint": "kontakt",
         "priority": 1
+      },
+      {
+        "title": "Galerie",
+        "endpoint": "galerie",
+        "priority": 1
       }
     ]
   }
