@@ -14,7 +14,6 @@ export default class ElmContacts < HTMLElement
     <div class='col-md-6 mx-auto text-center'>
       <h1 class='text-center mb-4'>Kontaktní údaje</h1>
       <p><strong>Telefon:<br> #{contacts_obj.phone}</strong></p>
-      <p><strong>E-mail:<br> #{contacts_obj.email}</strong></p>
       <p><strong>Název společnosti:</strong><br> #{contacts_obj.company}</p>
       <p><strong>Adresa:</strong><br> #{contacts_obj.address.gsub(', ', '<br>')}</p>
       <p><strong>IČO:</strong><br> #{contacts_obj.ico}</p>

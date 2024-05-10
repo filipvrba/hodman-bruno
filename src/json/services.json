@@ -1,0 +1,34 @@
+{
+    "services": [
+        {
+            "name": "Úklid a domácí práce",
+            "description": "Jsme tady, abychom vám usnadnili život a zajistili, že vaše domácnost bude vždy čistá, uklizená a připravená na vaše pohodlí. Poskytujeme širokou škálu služeb, včetně pravidelného úklidu a specializované péče o různé části domu. Svěřte nám starost o váš dům a užijte si klidný a pohodlný život bez starostí o každodenní úklidové rutiny.",
+            "picture": "/jpg/uklid-1400x800.jpg",
+            "price": "350 Kč"
+        },
+        {
+            "name": "Opravy a údržba",
+            "description": "V našem portfoliu oprav a údržby se věnujeme široké škále drobných prací, které zajistí, že váš domov zůstane v perfektním stavu. Naše zkušenosti a dovednosti zahrnují vodoinstalaci, malování, betonování a mnoho dalších oborů. Bez ohledu na to, zda potřebujete opravit trhliny ve zdi, vyměnit těsnění v koupelně nebo obnovit vzhled vaší fasády, jsme tu, abychom vám pomohli.",
+            "picture": "/jpg/oprava_udrzba-1400x800.jpg",
+            "price": "350 Kč"
+        },
+        {
+            "name": "Zahradní práce",
+            "description": "Nabízíme rozsáhlé zahradnické služby, které jsou klíčem k udržení vaší zahrady v nádherném stavu. Naše péče zahrnuje pravidelné sekání trávy, pečlivou údržbu a drobné úpravy podle vašich přání. Nechte nás proniknout do vaší zahrady a přinést do ní nový život, abyste se mohli plně věnovat svému volnu a užívat si krásy okolního prostředí. Vaše spokojenost je naší prioritou!",
+            "picture": "/jpg/zahradni_prace-1400x800.jpg",
+            "price": "350 Kč"
+        },
+        {
+            "name": "Stavba na Vašem Pozemku",
+            "description": "Naše komplexní stavební služby zahrnují výstavbu chat, plotů a pergol. Každý projekt pro nás představuje výzvu, kterou s vášní a precizností přijímáme. S pečlivostí a pozorností k detailům se zaměřujeme na každou fázi realizace, abychom zajistili, že vaše představy se stávají skutečností. Vaše důvěra je pro nás klíčová, a proto se snažíme překonat vaše očekávání a dodat vám nejvyšší kvalitu služeb.",
+            "picture": "/jpg/stavba_pozemek-1400x800.jpg",
+            "price": "350 Kč"
+        },
+        {
+            "name": "Podlahy",
+            "description": "Chcete proměnit váš interiér? Dejte nám šanci! Máme zkušenosti s pokládkou lina i plovoucích podlah. Slibujeme nejen precizní práci, ale také výsledek, který vás okouzlí. Už nemusíte řešit nepořádek – svěřte nám vaše podlahové potřeby a užívejte si krásu vašeho nového domova!",
+            "picture": "/jpg/podlahy-1400x800.jpg",
+            "price": "350 Kč"
+        }
+    ]
+}

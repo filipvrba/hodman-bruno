@@ -13,7 +13,6 @@ export default class ElmContacts extends HTMLElement {
     <div class='col-md-6 mx-auto text-center'>
       <h1 class='text-center mb-4'>Kontaktní údaje</h1>
       <p><strong>Telefon:<br> ${contactsObj.phone}</strong></p>
-      <p><strong>E-mail:<br> ${contactsObj.email}</strong></p>
       <p><strong>Název společnosti:</strong><br> ${contactsObj.company}</p>
       <p><strong>Adresa:</strong><br> ${contactsObj.address.replaceAll(
       ", ",
