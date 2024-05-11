@@ -6,6 +6,7 @@ import "./elements";
 window.ROUTES_JSON = routesObj;
 const TITLE_APP = document.title;
 window.TITLE_APP = TITLE_APP;
+window.ENVS = {};
 document.querySelector("#app").innerHTML = `${`
 <div class='container-lg py-3'>
   <elm-priority-routes></elm-priority-routes>

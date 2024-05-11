@@ -29,6 +29,9 @@ export default class ElmHeader < HTMLElement
           <a class='nav-link' href='#sluzby'>Služby</a>
         </li>
         <li class='nav-item'>
+          <a class='nav-link' href='#galerie'>Galerie</a>
+        </li>
+        <li class='nav-item'>
           <a class='nav-link' href='#ceny'>Ceny</a>
         </li>
         <li class='nav-item'>

@@ -8,4 +8,6 @@ window.customElements.define("elm-contacts", ElmContacts);
 import ElmServices from "./elements/elm_services";
 window.customElements.define("elm-services", ElmServices);
 import ElmPrices from "./elements/elm_prices";
-window.customElements.define("elm-prices", ElmPrices)
+window.customElements.define("elm-prices", ElmPrices);
+import ElmGallery from "./elements/elm_gallery";
+window.customElements.define("elm-gallery", ElmGallery)

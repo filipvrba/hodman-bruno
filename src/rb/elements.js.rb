@@ -15,3 +15,6 @@ window.custom_elements.define('elm-services', ElmServices)
 
 import 'ElmPrices', './elements/elm_prices'
 window.custom_elements.define('elm-prices', ElmPrices)
+
+import 'ElmGallery', './elements/elm_gallery'
+window.custom_elements.define('elm-gallery', ElmGallery)
