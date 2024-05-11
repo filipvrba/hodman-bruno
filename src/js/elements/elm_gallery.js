@@ -19,7 +19,7 @@ export default class ElmGallery extends HTMLElement {
       galleryObj.gallery.forEach((card, i) => {
         let cardTemplate = `${`
 <div class='col-md-4 mb-4'>
-  <img src='${card.picture}' class='img-fluid btn-img' onclick='galleryClick(${i})' style='border-radius: 0.375rem' data-bs-toggle='modal' data-bs-target='#galleryModal'>
+  <img src='${card.picture}' class='img-fluid btn-img d-block mx-auto' onclick='galleryClick(${i})' style='border-radius: 0.375rem' data-bs-toggle='modal' data-bs-target='#galleryModal'>
 </div>
         `}`;
         return cards.push(cardTemplate)
@@ -30,7 +30,7 @@ export default class ElmGallery extends HTMLElement {
 
     let template = `${`
 <div class='container mt-5'>
-  <div class='row'>
+  <div class='row vertical-center'>
     <h1 class='text-center mb-4'>Galerie</h1>
     ${lPictureCard()}
   </div>

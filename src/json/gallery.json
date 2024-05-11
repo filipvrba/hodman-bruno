@@ -1,13 +1,28 @@
 {
     "gallery": [
         {
-            "picture": "/jpg/uklid-1400x800.jpg"
+            "picture": "/jpg/gallery/chata_01.jpg"
         },
         {
-            "picture": "/jpg/oprava_udrzba-1400x800.jpg"
+            "picture": "/jpg/gallery/chata_02.jpg"
         },
         {
-            "picture": "/jpg/zahradni_prace-1400x800.jpg"
+            "picture": "/jpg/gallery/chata_03.jpg"
+        },
+        {
+            "picture": "/jpg/gallery/plot_01.jpg"
+        },
+        {
+            "picture": "/jpg/gallery/plot_02.jpg"
+        },
+        {
+            "picture": "/jpg/gallery/stul_01.jpg"
+        },
+        {
+            "picture": "/jpg/gallery/chodnik_01.jpg"
+        },
+        {
+            "picture": "/jpg/gallery/chodnik_02.jpg"
         }
     ]
 }

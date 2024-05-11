@@ -7,3 +7,10 @@
 .btn-img {
     cursor: pointer;
 }
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Umožní vertikální centrování obsahu na celou výšku okna */
+}
