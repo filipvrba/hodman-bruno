@@ -10,4 +10,6 @@ window.customElements.define("elm-services", ElmServices);
 import ElmPrices from "./elements/elm_prices";
 window.customElements.define("elm-prices", ElmPrices);
 import ElmGallery from "./elements/elm_gallery";
-window.customElements.define("elm-gallery", ElmGallery)
+window.customElements.define("elm-gallery", ElmGallery);
+import ElmGalleryModal from "./elements/elm_gallery_modal";
+window.customElements.define("elm-gallery-modal", ElmGalleryModal)

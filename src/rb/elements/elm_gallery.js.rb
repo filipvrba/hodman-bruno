@@ -10,8 +10,7 @@ export default class ElmGallery < HTMLElement
 
   def gallery_click(index)
     card = gallery_obj.gallery[index]
-    document.get_element_by_id("modal-image").src = card.picture
-    document.get_element_by_id("modal-title").innerText = card.name
+    Events.emit('#app', ENVS::GALLERY_CLICK, card)
   end
 
   def init_elm()

@@ -18,3 +18,6 @@ window.custom_elements.define('elm-prices', ElmPrices)
 
 import 'ElmGallery', './elements/elm_gallery'
 window.custom_elements.define('elm-gallery', ElmGallery)
+
+import 'ElmGalleryModal', './elements/elm_gallery_modal'
+window.custom_elements.define('elm-gallery-modal', ElmGalleryModal)

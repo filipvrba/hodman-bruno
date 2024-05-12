@@ -9,8 +9,7 @@ export default class ElmGallery extends HTMLElement {
 
   galleryClick(index) {
     let card = galleryObj.gallery[index];
-    document.getElementById("modal-image").src = card.picture;
-    return document.getElementById("modal-title").innerText = card.name
+    return Events.emit("#app", ENVS.GALLERY_CLICK, card)
   };
 
   initElm() {
