@@ -1,27 +1,35 @@
 {
     "gallery": [
         {
+            "name": "Postavená malá chata na pozemku v Roštíně.",
             "picture": "/jpg/gallery/chata_01.jpg"
         },
         {
+            "name": "Hotová střecha na chatě.",
             "picture": "/jpg/gallery/chata_02.jpg"
         },
         {
+            "name": "Detailnější záběr střechy.",
             "picture": "/jpg/gallery/chata_03.jpg"
         },
         {
+            "name": "Postavený plot i s pletivem na pozemku.",
             "picture": "/jpg/gallery/plot_01.jpg"
         },
         {
+            "name": "Další část plotu postavený v zadní části.",
             "picture": "/jpg/gallery/plot_02.jpg"
         },
         {
+            "name": "Postavený dřevěný pult.",
             "picture": "/jpg/gallery/stul_01.jpg"
         },
         {
+            "name": "Rozbitý chodník vedle domu.",
             "picture": "/jpg/gallery/chodnik_01.jpg"
         },
         {
+            "name": "Opravený chodník vedle domu.",
             "picture": "/jpg/gallery/chodnik_02.jpg"
         }
     ]

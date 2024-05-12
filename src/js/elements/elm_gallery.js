@@ -9,7 +9,8 @@ export default class ElmGallery extends HTMLElement {
 
   galleryClick(index) {
     let card = galleryObj.gallery[index];
-    return document.getElementById("modal-image").src = card.picture
+    document.getElementById("modal-image").src = card.picture;
+    return document.getElementById("modal-title").innerText = card.name
   };
 
   initElm() {
@@ -18,7 +19,7 @@ export default class ElmGallery extends HTMLElement {
 
       galleryObj.gallery.forEach((card, i) => {
         let cardTemplate = `${`
-<div class='col-md-4 mb-4'>
+<div class='col-4 mb-4'>
   <img src='${card.picture}' class='img-fluid btn-img d-block mx-auto' onclick='galleryClick(${i})' style='border-radius: 0.375rem' data-bs-toggle='modal' data-bs-target='#galleryModal'>
 </div>
         `}`;
