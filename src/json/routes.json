@@ -12,14 +12,14 @@
         "endpoint": "home",
         "priority": 10,
         "description": "Home description",
-        "image": ""
+        "image": "/knsm_logo.png"
       },
       {
         "title": "O nás",
         "endpoint": "o_nas",
         "priority": 1,
         "description": "O nás description",
-        "image": ""
+        "image": "/knsm_logo.png"
       },
       {
         "title": "Služby",
