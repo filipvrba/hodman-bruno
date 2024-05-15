@@ -3,37 +3,51 @@
       {
         "title": "Error",
         "endpoint": "error",
-        "priority": 0
+        "priority": 0,
+        "description": "",
+        "image": ""
       },
       {
-        "title": "Home",
+        "title": "Bruno",
         "endpoint": "home",
-        "priority": 10
+        "priority": 10,
+        "description": "Home description",
+        "image": ""
       },
       {
         "title": "O nás",
         "endpoint": "o_nas",
-        "priority": 1
+        "priority": 1,
+        "description": "O nás description",
+        "image": ""
       },
       {
         "title": "Služby",
         "endpoint": "sluzby",
-        "priority": 1
+        "priority": 1,
+        "description": "",
+        "image": ""
       },
       {
         "title": "Ceny",
         "endpoint": "ceny",
-        "priority": 1
+        "priority": 1,
+        "description": "",
+        "image": ""
       },
       {
         "title": "Kontakt",
         "endpoint": "kontakt",
-        "priority": 1
+        "priority": 1,
+        "description": "",
+        "image": ""
       },
       {
         "title": "Galerie",
         "endpoint": "galerie",
-        "priority": 1
+        "priority": 1,
+        "description": "",
+        "image": ""
       }
     ]
   }

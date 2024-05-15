@@ -36,7 +36,7 @@ export default class ElmRoutes extends HTMLElement {
   };
 
   initPage(page) {
-    document.title = `${page.title} | ${TITLE_APP}`;
+    this.initMeta(page);
     let fileName = page.endpoint.replaceAll("-", "_");
 
     return Net.curl(
@@ -52,5 +52,65 @@ export default class ElmRoutes extends HTMLElement {
     ) : null}\n    `}`;
 
     return this.innerHTML = template
+  };
+
+  initMeta(page) {
+    let title = `${page.title} | ${TITLE_APP}`;
+
+    // Title
+    document.title = title;
+
+    document.querySelector("meta[name=\"title\"]").setAttribute(
+      "content",
+      title
+    );
+
+    document.querySelector("meta[property=\"og:title\"]").setAttribute(
+      "content",
+      title
+    );
+
+    document.querySelector("meta[property=\"twitter:title\"]").setAttribute(
+      "content",
+      title
+    );
+
+    // Description
+    document.querySelector("meta[name=\"description\"]").setAttribute(
+      "content",
+      page.description
+    );
+
+    document.querySelector("meta[property=\"og:description\"]").setAttribute(
+      "content",
+      page.description
+    );
+
+    document.querySelector("meta[property=\"twitter:description\"]").setAttribute(
+      "content",
+      page.description
+    );
+
+    // Image
+    document.querySelector("meta[property=\"og:image\"]").setAttribute(
+      "content",
+      page.image
+    );
+
+    document.querySelector("meta[property=\"twitter:image\"]").setAttribute(
+      "content",
+      page.image
+    );
+
+    // Url
+    document.querySelector("meta[property=\"og:url\"]").setAttribute(
+      "content",
+      location.href
+    );
+
+    return document.querySelector("meta[property=\"twitter:url\"]").setAttribute(
+      "content",
+      location.href
+    )
   }
 }

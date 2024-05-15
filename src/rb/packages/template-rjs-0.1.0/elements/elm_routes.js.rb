@@ -34,7 +34,7 @@ export default class ElmRoutes < HTMLElement
   end
 
   def init_page(page)
-    document.title = "#{page.title} | #{TITLE_APP}"
+    init_meta(page)
     
     file_name = page.endpoint.gsub('-', '_')
     Net.curl("./html/#{file_name}.html") do |content|
@@ -48,5 +48,38 @@ export default class ElmRoutes < HTMLElement
     """
 
     self.innerHTML = template
+  end
+
+  def init_meta(page)
+    title = "#{page.title} | #{TITLE_APP}"
+
+    # Title
+    document.title = title
+    document.query_selector('meta[name="title"]')
+      .set_attribute('content', title)
+    document.query_selector('meta[property="og:title"]')
+      .set_attribute('content', title)
+    document.query_selector('meta[property="twitter:title"]')
+      .set_attribute('content', title)
+
+    # Description
+    document.query_selector('meta[name="description"]')
+      .set_attribute('content', page.description)
+    document.query_selector('meta[property="og:description"]')
+      .set_attribute('content', page.description)
+    document.query_selector('meta[property="twitter:description"]')
+      .set_attribute('content', page.description)
+    
+    # Image
+    document.query_selector('meta[property="og:image"]')
+      .set_attribute('content', page.image)
+    document.query_selector('meta[property="twitter:image"]')
+      .set_attribute('content', page.image)
+
+    # Url
+    document.query_selector('meta[property="og:url"]')
+      .set_attribute('content', location.href)
+    document.query_selector('meta[property="twitter:url"]')
+      .set_attribute('content', location.href)
   end
 end
