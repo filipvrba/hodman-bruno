@@ -54,63 +54,31 @@ export default class ElmRoutes extends HTMLElement {
     return this.innerHTML = template
   };
 
+  // document.query_selector('meta[name="title"]')
+  //   .set_attribute('content', title)
+  // document.query_selector('meta[property="og:title"]')
+  //   .set_attribute('content', title)
+  // document.query_selector('meta[property="twitter:title"]')
+  //   .set_attribute('content', title)
+  // # Description
+  // document.query_selector('meta[name="description"]')
+  //   .set_attribute('content', page.description)
+  // document.query_selector('meta[property="og:description"]')
+  //   .set_attribute('content', page.description)
+  // document.query_selector('meta[property="twitter:description"]')
+  //   .set_attribute('content', page.description)
+  // # Image
+  // document.query_selector('meta[property="og:image"]')
+  //   .set_attribute('content', page.image)
+  // document.query_selector('meta[property="twitter:image"]')
+  //   .set_attribute('content', page.image)
+  // # Url
+  // document.query_selector('meta[property="og:url"]')
+  //   .set_attribute('content', location.href)
+  // document.query_selector('meta[property="twitter:url"]')
+  //   .set_attribute('content', location.href)
   initMeta(page) {
     let title = `${page.title} | ${TITLE_APP}`;
-
-    // Title
-    document.title = title;
-
-    document.querySelector("meta[name=\"title\"]").setAttribute(
-      "content",
-      title
-    );
-
-    document.querySelector("meta[property=\"og:title\"]").setAttribute(
-      "content",
-      title
-    );
-
-    document.querySelector("meta[property=\"twitter:title\"]").setAttribute(
-      "content",
-      title
-    );
-
-    // Description
-    document.querySelector("meta[name=\"description\"]").setAttribute(
-      "content",
-      page.description
-    );
-
-    document.querySelector("meta[property=\"og:description\"]").setAttribute(
-      "content",
-      page.description
-    );
-
-    document.querySelector("meta[property=\"twitter:description\"]").setAttribute(
-      "content",
-      page.description
-    );
-
-    // Image
-    document.querySelector("meta[property=\"og:image\"]").setAttribute(
-      "content",
-      page.image
-    );
-
-    document.querySelector("meta[property=\"twitter:image\"]").setAttribute(
-      "content",
-      page.image
-    );
-
-    // Url
-    document.querySelector("meta[property=\"og:url\"]").setAttribute(
-      "content",
-      location.href
-    );
-
-    return document.querySelector("meta[property=\"twitter:url\"]").setAttribute(
-      "content",
-      location.href
-    )
+    return document.title = title
   }
 }
