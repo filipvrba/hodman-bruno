@@ -6,8 +6,8 @@
         "priority": 0
       },
       {
-        "title": "Bruno",
-        "endpoint": "home",
+        "title": "Úvod",
+        "endpoint": "uvod",
         "priority": 10
       },
       {
