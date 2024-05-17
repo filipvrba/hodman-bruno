@@ -13,7 +13,5 @@ window.ENVS = {
 }
 
 document.querySelector('#app').innerHTML = """
-<div class='container-lg py-3'>
-  <elm-priority-routes></elm-priority-routes>
-</div>
+<elm-priority-routes></elm-priority-routes>
 """

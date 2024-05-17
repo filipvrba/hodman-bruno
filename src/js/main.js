@@ -7,8 +7,4 @@ window.ROUTES_JSON = routesObj;
 const TITLE_APP = document.title;
 window.TITLE_APP = TITLE_APP;
 window.ENVS = {GALLERY_CLICK: 0};
-document.querySelector("#app").innerHTML = `${`
-<div class='container-lg py-3'>
-  <elm-priority-routes></elm-priority-routes>
-</div>
-`}`
+document.querySelector("#app").innerHTML = `${`\n<elm-priority-routes></elm-priority-routes>\n`}`
