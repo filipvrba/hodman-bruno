@@ -21,3 +21,6 @@ window.custom_elements.define('elm-gallery', ElmGallery)
 
 import 'ElmGalleryModal', './elements/elm_gallery_modal'
 window.custom_elements.define('elm-gallery-modal', ElmGalleryModal)
+
+import 'ElmLazyImage', './elements/elm_lazy_image'
+window.custom_elements.define('elm-lazy-image', ElmLazyImage)

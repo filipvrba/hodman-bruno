@@ -20,7 +20,7 @@ export default class ElmGallery < HTMLElement
       gallery_obj.gallery.each_with_index do |card, i|
         card_template = """
 <div class='col-4 mb-4'>
-  <img src='#{card.picture}' class='img-fluid btn-img d-block mx-auto' onclick='galleryClick(#{i})' style='border-radius: 0.375rem' data-bs-toggle='modal' data-bs-target='#galleryModal'>
+  <elm-lazy-image src='#{card.picture}' class='btn-img d-block mx-auto' onclick='galleryClick(#{i})' style='border-radius: 0.375rem' alt='#{card.name}' data-bs-toggle='modal' data-bs-target='#galleryModal'></elm-lazy-image>
 </div>
         """
 

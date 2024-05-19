@@ -14,6 +14,7 @@ export default class ElmServices < HTMLElement
   end
 
   def init_elm()
+# <img loading='lazy' src='#{service.picture}' class='card-img-top' alt='...'>
     l_services_dom = lambda do
       result = []
 
@@ -21,7 +22,7 @@ export default class ElmServices < HTMLElement
         service_template = """
 <div class='col-md-6 mb-4'>
   <div class='card'>
-    <img loading='lazy' src='#{service.picture}' class='card-img-top' alt='...'>
+    <elm-lazy-image src='#{service.picture}' class='card-img-top' alt='#{service.name}'></elm-lazy-image>
     <div class='card-body'>
       <h5 class='card-title'>#{service.name}</h5>
       <p class='card-text'>#{service.description}</p>

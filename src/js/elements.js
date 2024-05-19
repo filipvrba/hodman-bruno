@@ -12,4 +12,6 @@ window.customElements.define("elm-prices", ElmPrices);
 import ElmGallery from "./elements/elm_gallery";
 window.customElements.define("elm-gallery", ElmGallery);
 import ElmGalleryModal from "./elements/elm_gallery_modal";
-window.customElements.define("elm-gallery-modal", ElmGalleryModal)
+window.customElements.define("elm-gallery-modal", ElmGalleryModal);
+import ElmLazyImage from "./elements/elm_lazy_image";
+window.customElements.define("elm-lazy-image", ElmLazyImage)

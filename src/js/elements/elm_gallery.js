@@ -19,7 +19,7 @@ export default class ElmGallery extends HTMLElement {
       galleryObj.gallery.forEach((card, i) => {
         let cardTemplate = `${`
 <div class='col-4 mb-4'>
-  <img src='${card.picture}' class='img-fluid btn-img d-block mx-auto' onclick='galleryClick(${i})' style='border-radius: 0.375rem' data-bs-toggle='modal' data-bs-target='#galleryModal'>
+  <elm-lazy-image src='${card.picture}' class='btn-img d-block mx-auto' onclick='galleryClick(${i})' style='border-radius: 0.375rem' alt='${card.name}' data-bs-toggle='modal' data-bs-target='#galleryModal'></elm-lazy-image>
 </div>
         `}`;
         return cards.push(cardTemplate)
