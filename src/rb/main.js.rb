@@ -4,6 +4,7 @@ import 'routesObj', '../json/routes.json'
 
 import './core'
 import './elements'
+import './pages'
 
 window.ROUTES_JSON = routes_obj
 TITLE_APP = document.title

@@ -3,6 +3,7 @@ import "../css/style.css";
 import routesObj from "../json/routes.json";
 import "./core";
 import "./elements";
+import "./pages";
 window.ROUTES_JSON = routesObj;
 const TITLE_APP = document.title;
 window.TITLE_APP = TITLE_APP;
