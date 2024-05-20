@@ -43,6 +43,14 @@
         {
             "name": "Celkově posečená tráva na pozemku",
             "picture": "/jpg/gallery/seceni_03.jpg"
+        },
+        {
+            "name": "Položené lino s bočními lištami",
+            "picture": "/jpg/gallery/lino_01.jpg"
+        },
+        {
+            "name": "Položené lino s bočními lištami v druhé místnosti",
+            "picture": "/jpg/gallery/lino_02.jpg"
         }
     ]
 }
