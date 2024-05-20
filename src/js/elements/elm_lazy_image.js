@@ -1,3 +1,4 @@
+// https://blog.webdevsimplified.com/2023-05/lazy-load-images/
 export default class ElmLazyImage extends HTMLElement {
   constructor() {
     super();
@@ -23,7 +24,10 @@ export default class ElmLazyImage extends HTMLElement {
   };
 
   connectedCallback() {
-    return this._img.addEventListener("load", this._lLoaded)
+    return this._img.complete ? this._lLoaded() : this._img.addEventListener(
+      "load",
+      this._lLoaded
+    )
   };
 
   disconnectedCallback() {

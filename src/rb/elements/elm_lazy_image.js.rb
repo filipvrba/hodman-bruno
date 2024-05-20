@@ -1,3 +1,5 @@
+# https://blog.webdevsimplified.com/2023-05/lazy-load-images/
+
 export default class ElmLazyImage < HTMLElement
   def initialize
     super
@@ -24,7 +26,11 @@ export default class ElmLazyImage < HTMLElement
   end
 
   def connected_callback()
-    @img.add_event_listener("load", @l_loaded)
+    if @img.complete
+      @l_loaded.call()
+    else
+      @img.add_event_listener("load", @l_loaded)
+    end
   end
 
   def disconnected_callback()
