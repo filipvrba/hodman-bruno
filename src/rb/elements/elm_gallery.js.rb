@@ -4,13 +4,30 @@ export default class ElmGallery < HTMLElement
   def initialize
     super
     
+    @gallery_index_history = nil
+
     init_elm()
     window.gallery_click = gallery_click
+    window.modal_btn_prev_click = modal_btn_prev_click
+    window.modal_btn_next_click = modal_btn_next_click
   end
 
   def gallery_click(index)
+    @gallery_index_history = index
     card = gallery_obj.gallery[index]
     Events.emit('#app', ENVS::GALLERY_CLICK, card)
+  end
+
+  def modal_btn_prev_click()
+    index = @gallery_index_history <= 0 ?
+      (gallery_obj.gallery.length - 1) :
+      (@gallery_index_history - 1)
+    gallery_click(index)
+  end
+
+  def modal_btn_next_click()
+    index = (@gallery_index_history + 1) % gallery_obj.gallery.length
+    gallery_click(index)
   end
 
   def init_elm()

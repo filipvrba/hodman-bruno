@@ -31,6 +31,12 @@ export default class ElmGalleryModal extends HTMLElement {
       </div>
       <div class='modal-body'>        
         <img src='' id='modal-image' class='img-fluid'>
+        <button class='carousel-control-prev' type='button' onclick='modalBtnPrevClick()'>
+          <span class='carousel-control-prev-icon' aria-hidden='true'></span>
+        </button>
+        <button class='carousel-control-next' type='button' onclick='modalBtnNextClick()'>
+          <span class='carousel-control-next-icon' aria-hidden='true'></span>
+        </button>
       </div>
     </div>
   </div>
