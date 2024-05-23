@@ -14,12 +14,29 @@ export default class ElmContacts extends HTMLElement {
       <h1 class='text-center mb-4'>Kontaktní údaje</h1>
       <h3>Telefon:<br> <strong>${contactsObj.phone}</strong></h3>
       <br>
-      <p><strong>Název společnosti:</strong><br> ${contactsObj.company}</p>
-      <p><strong>Adresa:</strong><br> ${contactsObj.address.replaceAll(
+      <h4>Email:<br> <a class='a-normal' href='mailto:${contactsObj.email}'>${contactsObj.email}</a></h4>
+      
+      <br>
+      <br>
+      <table class='table'>
+        <thead>
+          <tr>
+            <th scope='col'>Název společnosti</th>
+            <th scope='col'>Adresa</th>
+            <th scope='col'>IČO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>${contactsObj.company}</td>
+            <td>${contactsObj.address.replaceAll(
       ", ",
       "<br>"
-    )}</p>
-      <p><strong>IČO:</strong><br> ${contactsObj.ico}</p>
+    )}</td>
+            <td>${contactsObj.ico}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
