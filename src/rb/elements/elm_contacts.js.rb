@@ -19,22 +19,24 @@ export default class ElmContacts < HTMLElement
       
       <br>
       <br>
-      <table class='table'>
-        <thead>
-          <tr>
-            <th scope='col'>Název společnosti</th>
-            <th scope='col'>Adresa</th>
-            <th scope='col'>IČO</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>#{contacts_obj.company}</td>
-            <td>#{contacts_obj.address.gsub(', ', '<br>')}</td>
-            <td>#{contacts_obj.ico}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class='table-responsive'>
+        <table class='table table-sm'>
+          <thead>
+            <tr>
+              <th scope='col'>Název společnosti</th>
+              <th scope='col'>Adresa</th>
+              <th scope='col'>IČO</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#{contacts_obj.company}</td>
+              <td>#{contacts_obj.address.gsub(', ', '<br>')}</td>
+              <td>#{contacts_obj.ico}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </div>
