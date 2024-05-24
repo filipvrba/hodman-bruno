@@ -4,6 +4,12 @@
     height: auto;
 }
 
+.max-256 {
+    max-width: 256px;
+    width: 100%;
+    height: auto;
+}
+
 .btn-img {
     cursor: pointer;
 }
