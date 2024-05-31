@@ -51,6 +51,14 @@
         {
             "name": "Položené lino s bočními lištami v druhé místnosti",
             "picture": "/jpg/gallery/lino_02.jpg"
+        },
+        {
+            "name": "Hrabání sena na kopku",
+            "picture": "/jpg/gallery/seno_01.jpg"
+        },
+        {
+            "name": "Nahrabané seno do řádků",
+            "picture": "/jpg/gallery/seno_02.jpg"
         }
     ]
 }
