@@ -24,3 +24,6 @@ window.custom_elements.define('elm-gallery-modal', ElmGalleryModal)
 
 import 'ElmLazyImage', './elements/elm_lazy_image'
 window.custom_elements.define('elm-lazy-image', ElmLazyImage)
+
+import 'ElmGalleryPagination', './elements/elm_gallery_pagination'
+window.custom_elements.define('elm-gallery-pagination', ElmGalleryPagination)
