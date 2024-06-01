@@ -1533,6 +1533,7 @@
       if (this._config.toggle) {
         this.toggle();
       }
+      this._addEventListeners();
     }
 
     // Getters
@@ -1661,6 +1662,11 @@
         element.classList.toggle(CLASS_NAME_COLLAPSED, !isOpen);
         element.setAttribute('aria-expanded', isOpen);
       }
+    }
+    _addEventListeners() {
+      EventHandler.on(this._element, "collapse.hide", event => {
+        this.hide();
+      });
     }
 
     // Static
